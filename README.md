@@ -1,3 +1,5 @@
+[Português](README.pt-BR.md)
+
 # Kasm Workspaces — Third-Party Registry
 
 A public **Kasm Workspaces registry (schema 1.1)** with 420 Portainer app

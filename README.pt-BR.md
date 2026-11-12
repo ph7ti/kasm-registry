@@ -1,3 +1,5 @@
+[English](README.md)
+
 # Kasm Workspaces — Registry de Terceiros
 
 Registry público para **Kasm Workspaces (schema 1.1)** com 420 templates de
