@@ -1,0 +1,26 @@
+{
+  "friendly_name": "Teste: Dokuwiki",
+  "description": "[Dokuwiki](https://www.dokuwiki.org/dokuwiki/) is a simple to use and highly versatile Open Source wiki software that doesn't require a database. It is loved by users for its clean and readable syntax. The ease of maintenance, backup and integration makes it an administrator's favorite. Built in access controls and authentication connectors make DokuWiki especially useful in the enterprise context and the large number of plugins contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki. Esta é uma demonstração efêmera: o navegador roda isolado no Kasm e o serviço de backend é criado e removido automaticamente quando a sessão inicia e termina.",
+  "image_src": "dokuwiki.png",
+  "categories": [
+    "Content Management"
+  ],
+  "architecture": [
+    "amd64"
+  ],
+  "docker_registry": "https://index.docker.io/v1/",
+  "compatibility": [
+    {
+      "version": "1.19.x",
+      "image": "kasmweb/chrome:1.19.0",
+      "uncompressed_size_mb": 2500
+    }
+  ],
+  "run_config": {
+    "environment": {
+      "LAUNCH_URL": "--kiosk --ignore-certificate-errors http://kasm-wait:8080/wait?target=https%3A%2F%2Fdokuwiki%3A443"
+    },
+    "shm_size": "512m"
+  },
+  "notes": "Teste efêmero do template Portainer 'Dokuwiki'. Backend Docker esperado: contêiner 'dokuwiki' (imagem linuxserver/dokuwiki:latest), na rede kasm_default_network, escutando na porta interna 443. URL alvo: https://dokuwiki:443. O navegador abre a página de espera http://kasm-wait:8080/wait?target=https%3A%2F%2Fdokuwiki%3A443, que verifica o backend a cada 2 s e redireciona quando ele responde. O orquestrador inicia o backend quando uma sessão desta workspace é detectada e o remove quando a última sessão termina."
+}
