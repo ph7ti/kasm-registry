@@ -83,3 +83,6 @@ Templates and logos belong to their original authors
 ([lissy93/portainer-templates](https://github.com/lissy93/portainer-templates)
 and the upstream template maintainers). The registry metadata and automation
 are MIT licensed.
+
+
+KASM-REGISTRY-DISCOVERY-IDENTIFIER
